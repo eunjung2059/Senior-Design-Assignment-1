@@ -1,0 +1,5 @@
+
+Image_q# files        = the first 15 image results for the question number #
+which_one_was_which   = the identiy of the search engines for each question
+related_search        = the suggested search from each search engine for each question
+web_search            = the first page results from each search engine for each question

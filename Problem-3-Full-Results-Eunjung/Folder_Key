@@ -1,5 +1,0 @@
-
-Image_qN files  = the first 15 image results for the Nth question
-Problem3_key    = the identiy of the search engines for each question
-related_search  = the suggested search form each search engine for each question
-web_search      = the first page results from each search engine for each question
