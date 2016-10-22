@@ -1,7 +1,7 @@
 // experiment result files
 Image_q#              = the first 15 image results for the question number #
 related_search        = the suggested search from each search engine for each question
-first_page#           = the web search results from each search engine for each question number #
+web_result#           = the web search results from each search engine for each question number #
 
 
 // Which one was which?
