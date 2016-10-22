@@ -2,9 +2,10 @@
 Image_q#              = the first 15 image results for the question number #
 related_search        = the suggested search from each search engine for each question
 web_result#           = the web search results from each search engine for each question number #
-                        link to the unprocessed [web_result_row_file](https://ccnymailcuny-my.sharepoint.com/personal/epark002_citymail_cuny_edu/_layouts/15/guestaccess.aspx?guestaccesstoken=EsObNJAgit%2frHCUfVenNejfI6wnyr2oMX%2fKyNTFXw5c%3d&folderid=02d3e624cc2b146f68fc8978288fb2225&rev=1&expiration=2016-11-21T14%3a17%3a05.000Z)
-
-
+                        link to the unprocessed [web_result_row_file]
+                        
+                        
+                        
 // Which one was which?
         A         B         C
   Q1:   Google    Bing      Yahoo
