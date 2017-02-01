@@ -5,11 +5,7 @@ OpenCV Installation
      http://cyaninfinite.com/tutorials/installing-opencv-in-ubuntu-for-python-3/ (Needs testing)
 
 Jupyter Notebook Tutorial
-     https://www.datacamp.com/community/tutorials/tutorial-jupyter-notebook#gs.3Dj4WsM
-     https://www.youtube.com/watch?v=Rc4JQWowG5I
-     
-     
-     
+     https://www.youtube.com/watch?v=IsXXlYVBt1M&feature=youtu.be&t=5m17s
      
 Python Tutorial
      https://docs.python.org/3/tutorial/
