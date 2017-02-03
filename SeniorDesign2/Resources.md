@@ -1,9 +1,9 @@
 Python 3 Installation (Anaconda)
      https://www.continuum.io/downloads
 
-OpenCV Installation
+OpenCV Installation (https://anaconda.org/menpo/opencv3)
 
-     conda install opencv
+     conda install -c menpo opencv3=3.2.0
 
 Jupyter Notebook Tutorial
      https://www.youtube.com/watch?v=IsXXlYVBt1M&feature=youtu.be&t=5m17s
