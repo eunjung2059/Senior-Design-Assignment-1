@@ -2,7 +2,7 @@ Python 3 Installation (Anaconda)
      https://www.continuum.io/downloads
 
 OpenCV Installation
-     http://cyaninfinite.com/tutorials/installing-opencv-in-ubuntu-for-python-3/ (Needs testing)
+     conda install opencv
 
 Jupyter Notebook Tutorial
      https://www.youtube.com/watch?v=IsXXlYVBt1M&feature=youtu.be&t=5m17s
