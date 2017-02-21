@@ -6,6 +6,7 @@ import numpy as np
 # load(a handle) video
 cap = cv2.VideoCapture(0) # 0 is the first web cam 
 
+
 # # 1. open a video frame
 # while True:
 # 	ret, frame = cap.read() # ret is true or false
@@ -18,6 +19,7 @@ cap = cv2.VideoCapture(0) # 0 is the first web cam
 
 # cap.release()
 # cv2.destroyAllWindows()
+
 
 # # 2. filter video into gray color
 # while True:
@@ -34,6 +36,7 @@ cap = cv2.VideoCapture(0) # 0 is the first web cam
 
 # cap.release()
 # cv2.destroyAllWindows()
+
 
 # 3. save the video
 fourcc = cv2.VideoWriter_fourcc(*'XVID')

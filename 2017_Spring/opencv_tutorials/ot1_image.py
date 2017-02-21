@@ -4,7 +4,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 import cv2
 
-# load a hand image
+
+# 1. load a hand image
 img = cv2.imread('hand.png', cv2.IMREAD_GRAYSCALE) # apply gray filter
 	# other flags for imread()
 	# 	IMREAD_COLOR		OR 1
@@ -17,7 +18,8 @@ img = cv2.imread('hand.png', cv2.IMREAD_GRAYSCALE) # apply gray filter
 	# waitKey(25) will display a frame for 25 ms, after which display will be automatically closed.
 # cv2.destroyAllWindows()
 
-# display image using matplotlib.pyplot
+
+# 2. display image using matplotlib.pyplot
 plt.imshow(img, cmap='gray', interpolation='bicubic')
 	# watch out when using color :
 	# - opencv uses BGR while matplotlib uses RGB
