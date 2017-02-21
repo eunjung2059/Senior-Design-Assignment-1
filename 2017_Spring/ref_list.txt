@@ -1,0 +1,4 @@
+reference for hand detection
+	http://www.robots.ox.ac.uk/~vgg/research/hands/
+dataset links for hand containing images
+	http://www.robots.ox.ac.uk/~vgg/data/hands/index.html
