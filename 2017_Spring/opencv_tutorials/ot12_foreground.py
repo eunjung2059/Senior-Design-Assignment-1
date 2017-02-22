@@ -1,4 +1,4 @@
-# ot12_foreground.py -  find foreground(remove background) manually
+# ot12_foreground.py - find foreground(remove background) manually
 # ref 
 # - https://pythonprogramming.net/grabcut-foreground-extraction-python-opencv-tutorial/
 # - http://docs.opencv.org/3.2.0/d8/d83/tutorial_py_grabcut.html
