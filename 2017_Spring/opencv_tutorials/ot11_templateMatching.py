@@ -25,7 +25,7 @@ import numpy as np
 # cv2.imwrite('detected.png', img_bgr)
 # cv2.imshow('detected', img_bgr)
 # cv2.waitKey(0)
-# cv2.distroyAllWindows()
+# cv2.destroyAllWindows()
 
 
 ### 2. with our data ###
@@ -61,4 +61,4 @@ cv2.imwrite('detected_2.png', img_bgr)
 cv2.imshow('detect with low threshold', img_bgr)
 cv2.waitKey(0)
 
-cv2.distroyAllWindows()
+cv2.destroyAllWindows()

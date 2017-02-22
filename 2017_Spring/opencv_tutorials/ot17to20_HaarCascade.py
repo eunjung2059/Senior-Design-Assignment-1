@@ -96,3 +96,4 @@ create_pos_n_neg()
 
 ### 4. Train cascade
 	# using opencv_traincascade
+	# then create cascade files

@@ -25,7 +25,7 @@ import numpy as np
     
 # cv2.imshow('Corner', img)
 # cv2.waitKey(0)
-# cv2.distroyAllWindows()
+# cv2.destroyAllWindows()
 
 
 
@@ -48,4 +48,4 @@ for corner in corners:
     
 cv2.imshow('Corner', img)
 cv2.waitKey(0)
-cv2.distroyAllWindows()
+cv2.destroyAllWindows()
