@@ -23,7 +23,10 @@ import numpy as np
 # 	cv2.rectangle(img_bgr, pt, (pt[0] + w, pt[1] + h), (0,255,255), 2)
 
 # cv2.imwrite('detected.png', img_bgr)
-# #cv2.imshow('detected', img_bgr) # not working...
+# cv2.imshow('detected', img_bgr)
+# cv2.waitKey(0)
+# cv2.distroyAllWindows()
+
 
 ### 2. with our data ###
 img_bgr = cv2.imread('ASL_one_youtube.png')
@@ -35,18 +38,27 @@ w, h = template.shape[::-1]
 
 res = cv2.matchTemplate(img_gray, template, cv2.TM_CCOEFF_NORMED)
 
-# save result with high threshold
-threshold = 0.9
+# 1. find with high threshold
+threshold = 0.8
 loc = np.where(res >= threshold)
-# https://docs.python.org/3/library/functions.html#zip
+
 for pt in zip(*loc[::-1]):
 	cv2.rectangle(img_bgr, pt, (pt[0] + w, pt[1] + h), (0,255,255), 1)
 cv2.imwrite('detected_1.png', img_bgr)
 
-# save result with low threshold
-threshold = 0.5
+cv2.imshow('detect with high threshold', img_bgr)
+cv2.waitKey(0)
+
+# 2. find with low threshold
+threshold = 0.6
 loc = np.where(res >= threshold)
-# https://docs.python.org/3/library/functions.html#zip
+
+img_bgr = cv2.imread('ASL_one_youtube.png') # read again to undo # 1
+
 for pt in zip(*loc[::-1]):
 	cv2.rectangle(img_bgr, pt, (pt[0] + w, pt[1] + h), (0,255,255), 1)
 cv2.imwrite('detected_2.png', img_bgr)
+cv2.imshow('detect with low threshold', img_bgr)
+cv2.waitKey(0)
+
+cv2.distroyAllWindows()
