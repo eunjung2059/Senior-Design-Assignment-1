@@ -13,15 +13,19 @@
 			pos/1.jpg 1 0 0 50 50  
 			pos/2.jpg
 			...
-3. create a positive vector file by stitching together all positives
-4. train cascade - with num_pos(50x50) = 2 * num_neg(100x100)
+3. Create a positive vector file by stitching together all positives
+4. Train cascade - with num_pos(50x50) = 2 * num_neg(100x100)
 '''
+
+
 ### download-image-by-link.py ###
 import urllib.request
 import cv2
 import numpy as np 
 import os
 
+
+### 1. Collect "negative" or "background" images
 def store_raw_images():
     neg_images_link = '//image-net.org/api/text/imagenet.synset.geturls?wnid=n00523513'   
     neg_image_urls = urllib.request.urlopen(neg_images_link).read().decode()
@@ -45,7 +49,6 @@ def store_raw_images():
             
         except Exception as e:
             print(str(e)) 
-
 store_raw_images()
 
 # delete ugly files
@@ -69,6 +72,7 @@ def find_uglies():
                     print(str(e))
 find_uglies()
 
+# write 'bg.txt' file
 def create_pos_n_neg():
     for file_type in ['neg']: # can add 'pos' later
         
@@ -78,12 +82,17 @@ def create_pos_n_neg():
                 line = file_type + '/' + img + '\n'
                 with open('bg.txt','a') as f:
                     f.write(line) 
-
             # elif file_type == 'pos':
             #     line = file_type + '/' + img + ' 1 0 0 50 50\n'
             #     with open('info.dat','a') as f:
             #         f.write(line)
-
 create_pos_n_neg()
 
-### opencv tutorial 20 is about creanting samples using opencv_createsamples
+### 2. Create "positive" images from a sample
+	# opencv tutorial 20 is about creanting samples using opencv_createsamples
+
+### 3. Create a positive vector file
+	# using opencv_createsamples again
+
+### 4. Train cascade
+	# using opencv_traincascade
