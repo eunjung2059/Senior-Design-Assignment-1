@@ -1,0 +1,11 @@
+(General information about training classifiers)
+      http://scikit-learn.org/stable/tutorial/basic/tutorial.html 
+      
+
+(Example code using built in "digits" data sets)
+      http://scikit-learn.org/stable/auto_examples/classification/plot_digits_classification.html#sphx-glr-auto-examples-classification-plot-digits-classification-py
+      
+      
+(Loading external datasets (images) resources)
+      http://scikit-learn.org/stable/datasets/index.html#external-datasets
+      
