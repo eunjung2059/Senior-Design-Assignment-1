@@ -36,16 +36,20 @@ while (True and (i <= 1000)):
 	
 	# find by adjusting the threshold value
 	threshold = 0.66
-	loc1 = np.where(res1 >= threshold)
-	print(loc1)
-	for pt in zip(*loc1[::-1]):	#------------------------------------------------------------------------
+	#loc1 = np.where(res1 >= threshold)
+	#print(loc1)
+	#for pt in zip(*loc1[::-1]):
+	#------------------------------------------------------------------------
+	if np.sum(res1 >= threshold) > 100:
 ##################################### filename_ #########################
 		cv2.imwrite("data/" + "one_" + str(i) + ".png", roi)
-		i = i + 1	#------------------------------------------------------------------------
+		print("saved " + str(i))
+		i = i + 1
+	#------------------------------------------------------------------------
 
 	#out.write(frame)
-
-	cv2.imshow('frame', frame)
+	mirror = cv2.flip(frame,1)
+	cv2.imshow('mirror view', mirror)
 
 	# display the video frame-by-frame for 1 ms
 	# & close the frame when 'q' is entered
