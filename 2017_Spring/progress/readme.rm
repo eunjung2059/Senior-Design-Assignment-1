@@ -17,5 +17,7 @@ This is readme.rm for our final presentation.
 	
 3. Apply the trained model to test the video input. 
 	// related file: knn_on_video.py
-	
+	- Load the video from web camera
+	- save "roi" into 2d array of one element
+	- test the "roi" using the trained model and display on the video.  
 	

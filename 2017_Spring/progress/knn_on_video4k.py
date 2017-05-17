@@ -9,6 +9,7 @@ file_names = glob.glob("data/*.png")
 print("Loading " + str(len(file_names)) + " files.") 	# confirm the total number of file paths
 file_names = np.sort(file_names)
 #print(file_names[0:10]) # confirm first 11 file names
+# should be 4000 images
 
 ## 2. read the first image
 f = file_names[0]	
@@ -29,22 +30,24 @@ for f in file_names:
 	images = np.append(images, [img.flatten()], axis=0)
 	
 #print(len(images)) 
-print("total images: %d"%(len(images))) # should be 3000
+print("total images: %d"%(len(images))) # should be 4000
 
 ## 4. Apply KNN
 from sklearn.model_selection import train_test_split
 from sklearn.neighbors import KNeighborsClassifier
 
 # make an array of labels
+arr_nth = np.zeros((1000,), dtype=np.int)
 arr_1s = np.ones((1000,), dtype=np.int)
 arr_2s = arr_1s + arr_1s
 arr_3s = arr_2s + arr_1s
 
-y = np.append(arr_1s, [arr_3s, arr_2s]) # y contains 1000 1s, 1000 3s, 1000 2s in this order
+# y contains 1000 0s for nth, 1000 1s, 1000 3s, 1000 2s in this order
+y = np.append(arr_nth, [arr_1s, arr_3s, arr_2s]) 
 
 # split the dataset "images" and label "y"
 x_train, x_test, y_train, y_test = train_test_split(images, y, test_size=0.2, random_state=42)
-print("split training images: %d"%(len(x_train))) # should be 2400
+print("split training images: %d"%(len(x_train))) # should be 3200
 
 
 num = 3 # number of neighbors for KNN

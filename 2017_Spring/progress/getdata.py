@@ -36,6 +36,7 @@ while (True and (i <= 1000)):
 	
 	# find by adjusting the threshold value
 	threshold = 0.66
+
 	#loc1 = np.where(res1 >= threshold)
 	#print(loc1)
 	#for pt in zip(*loc1[::-1]):
@@ -43,6 +44,7 @@ while (True and (i <= 1000)):
 	if np.sum(res1 >= threshold) > 100:
 ##################################### filename_ #########################
 		cv2.imwrite("data/" + "one_" + str(i) + ".png", roi)
+		#cv2.imwrite("data/" + "nth_" + str(i) + ".png", roi)
 		print("saved " + str(i))
 		i = i + 1
 	#------------------------------------------------------------------------
