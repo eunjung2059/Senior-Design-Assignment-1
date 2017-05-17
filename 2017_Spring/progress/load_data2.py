@@ -21,4 +21,7 @@ arr_1s = np.ones((1000,), dtype=np.int)
 arr_2s = arr_1s + arr_1s
 arr_3s = arr_2s + arr_1s
 
-y = np.append(arr_1s, [arr_2s, arr_3s]) # y contains 1000 1s, 1000 2s, 1000 3s in this order  
+y = np.append(arr_1s, [arr_3s, arr_2s]) # y contains 1000 1s, 1000 3s, 1000 2s in this order
+print(y[:10])
+print(y[999:1010])
+print(y[1998:2010])
