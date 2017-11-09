@@ -1,2 +1,2 @@
-## Demo is under the Progress folder
+## Demo is under the `progress` folder
 Check Progres/readme for more detail. 
